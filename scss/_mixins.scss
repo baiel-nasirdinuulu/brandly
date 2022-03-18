@@ -1,0 +1,13 @@
+@mixin title {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+
+  text-transform: uppercase;
+}
+@mixin btn {
+  padding: 21px 56px;
+  border: 1px solid white;
+}

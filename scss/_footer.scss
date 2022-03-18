@@ -1,0 +1,23 @@
+footer {
+  background-image: url(../img/footer.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 157px;
+  .footer__address {
+    margin-left: 76px;
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: capitalize;
+
+    color: #ffffff;
+  }
+}
+footer .container {
+  height: 157px;
+  display: flex;
+  align-items: center;
+}

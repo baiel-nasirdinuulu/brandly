@@ -1,0 +1,235 @@
+@import "vars";
+@import "mixins";
+
+.hero {
+  width: 100%;
+  height: 544px;
+  background-image: url(../img/b.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__inner {
+    padding-top: 137px;
+    padding-bottom: 100px;
+    width: 100%;
+
+    text-align: center;
+  }
+  &__title {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+
+    font-size: 30px;
+    line-height: 30px;
+
+    letter-spacing: 0.5em;
+
+    text-transform: uppercase;
+
+    color: #ffffff;
+    margin-bottom: 45px;
+  }
+  &__info {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 60px;
+    /* identical to box height, or 109% */
+
+    text-transform: uppercase;
+
+    color: #ffffff;
+    margin-bottom: 45px;
+  }
+  &__info-secondary {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 30px;
+    /* identical to box height, or 100% */
+
+    text-transform: uppercase;
+
+    color: #ffffff;
+    margin-bottom: 66px;
+  }
+  &__link {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 18px;
+    /* identical to box height, or 100% */
+
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    text-decoration: none;
+    transition: all 0.4s;
+    border: 1px solid red;
+    &:hover {
+      background-color: rgb(13, 13, 73);
+    }
+    & {
+      @include btn;
+    }
+  }
+}
+
+.cotigories {
+  &__inner {
+    text-align: center;
+  }
+  &__title {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 40px;
+
+    text-transform: capitalize;
+
+    color: #333333;
+    margin-top: 101px;
+    margin-bottom: 79px;
+  }
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0;
+    margin: 0;
+  }
+  &__list {
+    height: 419px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .men {
+    list-style: none;
+    background-image: url(../img/men.png);
+    background-size: cover;
+  }
+  .woomen {
+    background-image: url(../img/woomen.png);
+    background-size: cover;
+  }
+  .whacht {
+    background-image: url(../img/whacht.png);
+    background-size: cover;
+  }
+  &__link {
+    text-decoration: none;
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 40px;
+    /* identical to box height, or 100% */
+
+    text-transform: capitalize;
+
+    color: #ffffff;
+    transition: all 0.4s;
+    &:hover {
+      color: #ff0745;
+    }
+  }
+}
+
+.blog {
+  &__title {
+    text-align: center;
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 40px;
+    /* identical to box height, or 100% */
+
+    text-transform: capitalize;
+
+    color: #333333;
+    margin-top: 129px;
+    margin-bottom: 102px;
+  }
+  &__big-blog {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 100px;
+  }
+  &__blog1 {
+    width: 540px;
+    height: 604px;
+  }
+  &__name {
+    margin: 20px 0 15px 0;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: capitalize;
+
+    color: #dc0000;
+  }
+  &__Athor {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-transform: capitalize;
+
+    color: #333333;
+    padding-bottom: 12px;
+    margin-bottom: 29px;
+    border-bottom: 1px solid rgb(143, 133, 133);
+  }
+  &__p {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: capitalize;
+
+    color: #9a9a9a;
+    margin-bottom: 24px;
+  }
+  &__link {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #333333;
+    text-decoration: none;
+
+    & {
+      border: 1px solid rgb(0, 0, 0);
+      width: 144px;
+      height: 30px;
+      margin-bottom: 77px;
+      transition: all 0.5s;
+      padding: 4px 25px;
+    }
+    &:hover {
+      background-color: #aa8e8e;
+      color: black;
+    }
+  }
+}

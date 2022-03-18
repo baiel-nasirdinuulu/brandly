@@ -1,0 +1,39 @@
+@import "mixins";
+@import "vars";
+
+.header {
+  &__logo {
+    @include title;
+    text-decoration: none;
+
+    color: $main-color;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0 15px 0;
+    align-items: center;
+  }
+}
+.menu {
+  display: flex;
+
+  list-style: none;
+  gap: 53px;
+}
+.menu {
+  &__link {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 18px;
+    color: $main-color;
+    transition: all 0.4s;
+    &:hover {
+      color: rgb(55, 10, 255);
+    }
+  }
+}
